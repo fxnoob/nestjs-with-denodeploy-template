@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "scripts": {
+    "deploy": "deployctl deploy --prod --project=smrtxt2 --token=ddp_SzQkAgBvC1q4It736yQqOIo7yO9bVH1nEHS3 src/main.ts"
+  },
+  "dependencies": {},
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT"
+}

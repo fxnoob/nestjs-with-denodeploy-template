@@ -1,0 +1,37 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "deno run --unstable-kv --watch --allow-write --allow-read --allow-env --allow-net --allow-sys src/main.ts"
+  },
+  "imports": {
+    "@nestjs/common": "npm:@nestjs/common@^10.3.9",
+    "@nestjs/core": "npm:@nestjs/core@^10.3.9",
+    "@nestjs/platform-express": "npm:@nestjs/platform-express@^10.3.9",
+    "@nestjs/config": "npm:@nestjs/config@^3.3.0",
+    "reflect-metadata": "npm:reflect-metadata@^0.2.0",
+    "rxjs": "npm:rxjs@^7.8.1",
+    "@nestjs/swagger": "npm:@nestjs/swagger@latest",
+    "swagger-ui-express": "npm:swagger-ui-express@latest",
+    "express-basic-auth": "npm:express-basic-auth@latest",
+    "express": "npm:express@latest",
+    "geoip-lite": "npm:geoip-lite@latest",
+    "nestjs-pino": "npm:nestjs-pino@latest",
+    "pino-http": "npm:pino-http@latest",
+    "@nestjs/websockets":"npm:@nestjs/websockets@latest",
+    "socket.io": "npm:socket.io@latest",
+    "@nestjs/platform-socket.io": "npm:@nestjs/platform-socket.io@latest"
+  },
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false
+  },
+  "deploy": {
+    "project": "smrtxt2",
+    "exclude": [
+      "node_modules", "dist"
+    ],
+    "include": [],
+    "entrypoint": "src/main.ts"
+  }
+}
